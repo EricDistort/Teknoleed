@@ -116,4 +116,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 2000);
     }
+
+    // --- Mobile Menu Logic (Safe Injection) ---
+    // Use existing 'navbar' variable from outer scope
+    const existingBtn = document.querySelector('.mobile-menu-btn');
+
+    if (navbar && !existingBtn) {
+        // Create Hamburger Icon
+        const menuBtn = document.createElement('div');
+        menuBtn.className = 'mobile-menu-btn';
+        menuBtn.innerHTML = '☰'; // Three line burger
+        menuBtn.style.cursor = 'pointer';
+
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks) {
+            navbar.insertBefore(menuBtn, navLinks);
+        } else {
+            navbar.appendChild(menuBtn);
+        }
+
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('expanded');
+            if (navbar.classList.contains('expanded')) {
+                menuBtn.innerHTML = '✕';
+            } else {
+                menuBtn.innerHTML = '☰';
+            }
+        });
+
+        // Close menu when clicking a link
+        if (navLinks) {
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navbar.classList.remove('expanded');
+                    menuBtn.innerHTML = '☰';
+                });
+            });
+        }
+    }
 });

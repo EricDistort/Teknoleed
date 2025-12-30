@@ -1230,3 +1230,129 @@ details[open] .faq-question::after {
     padding-right: 20px;
 }
 
+
+/* --- RESPONSIVE & MOBILE MENU --- */
+
+/* Mobile Menu Button (Hidden on Desktop) */
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1002;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    /* Navbar adaption */
+    .navbar {
+        width: 90%;
+        min-width: unset;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allow expansion */
+        padding: 15px 25px;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        overflow: hidden;
+        height: 70px; /* Collapsed height matches content */
+        align-items: flex-start; /* Align top when expanded */
+    }
+    
+    /* Center logo and burger vertically in collapsed state */
+    .navbar:not(.expanded) {
+        align-items: center;
+    }
+
+    .navbar.expanded {
+        height: 350px; /* Expanded height */
+        background: rgba(10, 10, 15, 0.98); /* Less transparent for legibility */
+        border-radius: 30px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+    }
+    
+    .navbar .logo {
+        z-index: 1002; /* Ensure logo stays clickable */
+    }
+
+    .nav-links {
+        display: none; /* Hide generally */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 40px; /* Space from top */
+        opacity: 0;
+        transition: opacity 0.3s ease 0.1s; /* Slight delay */
+    }
+
+    .navbar.expanded .nav-links {
+        display: flex;
+        opacity: 1;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* Hero Typography */
+    .hero h1 { font-size: 3rem; }
+    .section-title { font-size: 2.2rem; }
+
+    /* Layout Stacking */
+    .split-layout, .split-layout.reverse {
+        flex-direction: column !important;
+        gap: 40px;
+    }
+    
+    .projects-grid, .feature-grid, .department-grid, .architect-grid, .tech-spec-grid {
+        grid-template-columns: 1fr; /* Force single col */
+    }
+    
+    /* Stats */
+    .stats-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Comparison Table */
+    .comparison-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Process Steps */
+    .process-steps {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .process-steps::before {
+        width: 2px;
+        height: 80%;
+        left: 50%;
+        top: 0;
+    }
+    .step-card { width: 100%; }
+
+    /* Contact Form & Footer */
+    .form-section-wrapper { margin: 40px auto; padding: 0 20px; }
+    .footer-content { flex-direction: column; gap: 30px; }
+    
+    /* Roadmap Mobile */
+    .roadmap-container {
+       padding-left: 0;
+       margin-left: 0;
+    }
+    .roadmap-node {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar { width: 95%; top: 10px; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1rem; }
+    
+    .monitor-stat { width: 100%; }
+    .status-bar { font-size: 0.7rem; }
+}
