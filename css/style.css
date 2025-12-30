@@ -38,7 +38,7 @@ body {
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.4;
+    opacity: 0.2; /* Increased visibility from 0.4 */
 }
 
 a { text-decoration: none; color: inherit; transition: all 0.3s ease; }

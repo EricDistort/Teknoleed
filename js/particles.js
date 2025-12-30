@@ -11,10 +11,10 @@ class Particle {
     constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 2 + 0.1; // Random size
-        this.speedX = Math.random() * 0.5 - 0.25; // Gentle speed
+        this.size = Math.random() * 3 + 1; // Bigger particles (was 2 + 0.1)
+        this.speedX = Math.random() * 0.5 - 0.25;
         this.speedY = Math.random() * 0.5 - 0.25;
-        this.color = 'rgba(0, 243, 255, 0.5)'; // Electric blue base
+        this.color = 'rgba(0, 243, 255, 0.9)'; // Higher opacity (was 0.5)
     }
     update() {
         this.x += this.speedX;
@@ -36,7 +36,8 @@ class Particle {
 
 function init() {
     particlesArray = [];
-    const numberOfParticles = (canvas.width * canvas.height) / 15000;
+    // Increase density: divisor reduced from 15000 to 9000
+    const numberOfParticles = (canvas.width * canvas.height) / 9000;
     for (let i = 0; i < numberOfParticles; i++) {
         particlesArray.push(new Particle());
     }
@@ -54,10 +55,11 @@ function animateParticles() {
             const dy = particlesArray[i].y - particlesArray[j].y;
             const distance = Math.sqrt(dx * dx + dy * dy);
 
-            if (distance < 150) {
+            // Increase connection distance from 150 to 180
+            if (distance < 180) {
                 ctx.beginPath();
-                ctx.strokeStyle = `rgba(0, 243, 255, ${1 - distance / 150})`;
-                ctx.lineWidth = 0.5;
+                ctx.strokeStyle = `rgba(0, 243, 255, ${1 - distance / 180})`;
+                ctx.lineWidth = 1; // Thicker lines (was 0.5)
                 ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
                 ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
                 ctx.stroke();
