@@ -1265,7 +1265,7 @@ details[open] .faq-question::after {
     }
 
     .navbar.expanded {
-        height: 350px; /* Expanded height */
+        height: 450px; /* Expanded height */
         background: rgba(10, 10, 15, 0.98); /* Less transparent for legibility */
         border-radius: 30px;
         box-shadow: 0 20px 60px rgba(0,0,0,0.8);
