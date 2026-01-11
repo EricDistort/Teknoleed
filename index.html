@@ -1,317 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teknoleed | Future of Finance</title>
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Background Particles -->
     <canvas id="particles-canvas"></canvas>
 
     <!-- Navigation -->
     <nav class="navbar">
-        <a href="index.html" class="logo">TEKNOLEED</a>
-        <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="Assets/Bullguard.apk" download>Bullguard</a>
-        </div>
+      <a href="index.html" class="logo">TEKNOLEED</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="Assets/Bullguard.apk" download>Bullguard</a>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
-        <h1 class="fade-in-up">
-            INVEST IN<br>
-            <span class="gradient-text">THE FUTURE</span>
-        </h1>
-        <p class="fade-in-up delay-100" style="font-size: 1.15rem; line-height: 1.8; max-width: 800px;">
-            Teknoleed bridges the colossal gap between traditional finance (TradFi) and next-generation decentralized innovation. 
-            In an era of stagnant yields and rising inflation, we provide a gateway to algorithmic growth. 
-            Grow your wealth through our curated ecosystem of high-yield productive assets, powered by institutional-grade audits and transparent on-chain mechanics.
-        </p>
-        <div class="fade-in-up delay-200" style="margin-top:30px;">
-            <a href="projects.html" class="btn">Explore Ecosystem</a>
-            <a href="about.html" class="btn btn-secondary" style="margin-left: 15px;">Read Manifesto</a>
-        </div>
+      <h1 class="fade-in-up">
+        INVEST IN<br />
+        <span class="gradient-text">THE FUTURE</span>
+      </h1>
+      <p
+        class="fade-in-up delay-100"
+        style="font-size: 1.15rem; line-height: 1.8; max-width: 800px"
+      >
+        Teknoleed bridges the colossal gap between traditional finance (TradFi)
+        and next-generation decentralized innovation. In an era of stagnant
+        yields and rising inflation, we provide a gateway to algorithmic growth.
+        Grow your wealth through our curated ecosystem of high-yield productive
+        assets, powered by institutional-grade audits and transparent on-chain
+        mechanics.
+      </p>
+      <div class="fade-in-up delay-200" style="margin-top: 30px">
+        <a href="projects.html" class="btn">Explore Ecosystem</a>
+        <a href="about.html" class="btn btn-secondary" style="margin-left: 15px"
+          >Read Manifesto</a
+        >
+      </div>
     </header>
 
     <!-- Stats Section -->
     <section>
-        <div class="stats-container fade-in-up">
-            <div class="stat-item">
-                <h2 class="counter" data-target="5">0</h2>
-                <p>Innovative Projects</p>
-            </div>
-            <div class="stat-item">
-                <h2 class="counter" data-target="15000">0</h2>
-                <p>Active Investors</p>
-            </div>
-            <div class="stat-item">
-                <h2 class="counter" data-target="45">0</h2>
-                <p>Million AUM ($)</p>
-            </div>
-             <div class="stat-item">
-                <h2>24/7</h2>
-                <p>Support System</p>
-            </div>
+      <div class="stats-container fade-in-up">
+        <div class="stat-item">
+          <h2 class="counter" data-target="5">0</h2>
+          <p>Innovative Projects</p>
         </div>
+        <div class="stat-item">
+          <h2 class="counter" data-target="15000">0</h2>
+          <p>Active Investors</p>
+        </div>
+        <div class="stat-item">
+          <h2 class="counter" data-target="45">0</h2>
+          <p>Million AUM ($)</p>
+        </div>
+        <div class="stat-item">
+          <h2>24/7</h2>
+          <p>Support System</p>
+        </div>
+      </div>
     </section>
 
     <!-- Section: The Paradigm Shift -->
     <section>
-        <h2 class="section-title fade-in-up">THE <span class="gradient-text">PARADIGM SHIFT</span></h2>
-        <p class="fade-in-up" style="max-width: 800px; margin: 0 auto 50px; text-align: center; color: var(--text-muted); font-size: 1.1rem;">
-            The old financial system is built on gatekeepers, inefficiency, and exclusion. 
-            Teknoleed removes the middleman, allowing you to access the raw productive power of your capital 
-            through decentralized protocols that were once reserved for the ultra-wealthy.
-        </p>
-        <div class="comparison-container fade-in-up">
-            <!-- Old World -->
-            <div class="comparison-card tradfi">
-                <h3>Traditional Finance</h3>
-                <div class="comp-row">
-                    <span>Average Savings APY</span>
-                    <span style="color:#ff4d4d">0.5%</span>
-                </div>
-                <div class="comp-row">
-                    <span>Asset Control</span>
-                    <span style="color:#ff4d4d">Centralized Custody</span>
-                </div>
-                <div class="comp-row">
-                    <span>Transparency</span>
-                    <span style="color:#ff4d4d">Opaque / Black Box</span>
-                </div>
-                 <div class="comp-row">
-                    <span>Accessibility</span>
-                    <span style="color:#ff4d4d">Institutions Only</span>
-                </div>
-            </div>
-            <!-- New World -->
-            <div class="comparison-card defi">
-                <h3>Teknoleed Ecosystem</h3>
-                <div class="comp-row">
-                    <span>SantrX Yield</span>
-                    <span style="color:#00ff88">200% - 400%</span>
-                </div>
-                <div class="comp-row">
-                    <span>Asset Control</span>
-                    <span style="color:#00ff88">User Owned (Non-Custodial)</span>
-                </div>
-                <div class="comp-row">
-                    <span>Transparency</span>
-                    <span style="color:#00ff88">Verifiable On-Chain</span>
-                </div>
-                 <div class="comp-row">
-                    <span>Accessibility</span>
-                    <span style="color:#00ff88">Permissionless</span>
-                </div>
-            </div>
+      <h2 class="section-title fade-in-up">
+        THE <span class="gradient-text">PARADIGM SHIFT</span>
+      </h2>
+      <p
+        class="fade-in-up"
+        style="
+          max-width: 800px;
+          margin: 0 auto 50px;
+          text-align: center;
+          color: var(--text-muted);
+          font-size: 1.1rem;
+        "
+      >
+        The old financial system is built on gatekeepers, inefficiency, and
+        exclusion. Teknoleed removes the middleman, allowing you to access the
+        raw productive power of your capital through decentralized protocols
+        that were once reserved for the ultra-wealthy.
+      </p>
+      <div class="comparison-container fade-in-up">
+        <!-- Old World -->
+        <div class="comparison-card tradfi">
+          <h3>Traditional Finance</h3>
+          <div class="comp-row">
+            <span>Average Savings APY</span>
+            <span style="color: #ff4d4d">0.5%</span>
+          </div>
+          <div class="comp-row">
+            <span>Asset Control</span>
+            <span style="color: #ff4d4d">Centralized Custody</span>
+          </div>
+          <div class="comp-row">
+            <span>Transparency</span>
+            <span style="color: #ff4d4d">Opaque / Black Box</span>
+          </div>
+          <div class="comp-row">
+            <span>Accessibility</span>
+            <span style="color: #ff4d4d">Institutions Only</span>
+          </div>
         </div>
+        <!-- New World -->
+        <div class="comparison-card defi">
+          <h3>Teknoleed Ecosystem</h3>
+          <div class="comp-row">
+            <span>SantrX Yield</span>
+            <span style="color: #00ff88">200% - 400%</span>
+          </div>
+          <div class="comp-row">
+            <span>Asset Control</span>
+            <span style="color: #00ff88">User Owned (Non-Custodial)</span>
+          </div>
+          <div class="comp-row">
+            <span>Transparency</span>
+            <span style="color: #00ff88">Verifiable On-Chain</span>
+          </div>
+          <div class="comp-row">
+            <span>Accessibility</span>
+            <span style="color: #00ff88">Permissionless</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section: How It Works -->
-    <section style="overflow: hidden;">
-        <h2 class="section-title fade-in-up">HOW IT <span>WORKS</span></h2>
-        <div class="process-steps fade-in-up">
-            <div class="step-card">
-                <div class="step-icon">01</div>
-                <h3>Connect Portfolio</h3>
-                <p style="color:var(--text-muted); font-size:0.95rem;">
-                    Seamlessly integrate your digital assets via our secure Web3 interface. 
-                    We support Metamask, WalletConnect, and all major hardware wallets for maximum security.
-                </p>
-            </div>
-            <div class="step-card">
-                <div class="step-icon">02</div>
-                <h3>Select Strategy</h3>
-                <p style="color:var(--text-muted); font-size:0.95rem;">
-                    Choose from our curated engines: SantrX (High Yield Aggregation), 
-                    Bullguard (RWA Tokenization), or Techmont (NFT Liquidity Staking).
-                </p>
-            </div>
-            <div class="step-card">
-                <div class="step-icon">03</div>
-                <h3>Watch It Grow</h3>
-                <p style="color:var(--text-muted); font-size:0.95rem;">
-                    Your assets are put to work immediately. Track real-time performance on your dashboard, 
-                    view reward accrual, and withdraw your liquidity instantly anytime.
-                </p>
-            </div>
+    <section style="overflow: hidden">
+      <h2 class="section-title fade-in-up">HOW IT <span>WORKS</span></h2>
+      <div class="process-steps fade-in-up">
+        <div class="step-card">
+          <div class="step-icon">01</div>
+          <h3>Connect Portfolio</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem">
+            Seamlessly integrate your digital assets via our secure Web3
+            interface. We support Metamask, WalletConnect, and all major
+            hardware wallets for maximum security.
+          </p>
         </div>
+        <div class="step-card">
+          <div class="step-icon">02</div>
+          <h3>Select Strategy</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem">
+            Choose from our curated engines: SantrX (High Yield Aggregation),
+            Bullguard (RWA Tokenization), or Techmont (NFT Liquidity Staking).
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">03</div>
+          <h3>Watch It Grow</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem">
+            Your assets are put to work immediately. Track real-time performance
+            on your dashboard, view reward accrual, and withdraw your liquidity
+            instantly anytime.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Section: ROI Calculator -->
     <section>
-        <h2 class="section-title fade-in-up">PROJECT <span>YOUR GROWTH</span></h2>
-        <div class="calculator-container fade-in-up">
-            <div class="slider-group">
-                <div class="slider-label">
-                    <span>Initial Investment</span>
-                    <span id="investment-val">$10,000</span>
-                </div>
-                <input type="range" id="investment-input" min="1000" max="100000" step="500" value="10000">
-            </div>
-            <div class="slider-group">
-                <div class="slider-label">
-                    <span>Duration (Months)</span>
-                    <span id="duration-val">12 Months</span>
-                </div>
-                 <input type="range" id="duration-input" min="1" max="24" step="1" value="12">
-            </div>
-            
-            <div class="calc-result">
-                <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted);">Estimated Returns (SantrX)</p>
-                <div class="result-val" id="result-display">$30,000</div>
-                <p style="font-size: 0.8rem; color: #fff; opacity: 0.5; margin-top: 10px;">*Estimates based on historical 3.0x yields. Not financial advice.</p>
-            </div>
+      <h2 class="section-title fade-in-up">PROJECT <span>YOUR GROWTH</span></h2>
+      <div class="calculator-container fade-in-up">
+        <div class="slider-group">
+          <div class="slider-label">
+            <span>Initial Investment</span>
+            <span id="investment-val">$10,000</span>
+          </div>
+          <input
+            type="range"
+            id="investment-input"
+            min="1000"
+            max="100000"
+            step="500"
+            value="10000"
+          />
         </div>
+        <div class="slider-group">
+          <div class="slider-label">
+            <span>Duration (Months)</span>
+            <span id="duration-val">12 Months</span>
+          </div>
+          <input
+            type="range"
+            id="duration-input"
+            min="1"
+            max="24"
+            step="1"
+            value="12"
+          />
+        </div>
+
+        <div class="calc-result">
+          <p
+            style="
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              color: var(--text-muted);
+            "
+          >
+            Estimated Returns (SantrX)
+          </p>
+          <div class="result-val" id="result-display">$30,000</div>
+          <p
+            style="
+              font-size: 0.8rem;
+              color: #fff;
+              opacity: 0.5;
+              margin-top: 10px;
+            "
+          >
+            *Estimates based on historical 3.0x yields. Not financial advice.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Section: Why Us (Refined & Expanded) -->
     <section>
-        <h2 class="section-title fade-in-up">THE TEKNOLEED <span>ADVANTAGE</span></h2>
-        <div class="feature-grid">
-            <!-- Feature 1 -->
-            <div class="feature-card fade-in-up delay-100">
-                <div class="feature-card-inner">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Ironclad Security</h3>
-                    <p style="color: var(--text-muted);">
-                        We prioritize capital preservation utilizing multi-sig wallets, time-locks, and 
-                        rigorous third-party auditing to ensure your assets are immune to systemic shocks.
-                    </p>
-                </div>
-            </div>
-            <!-- Feature 2 -->
-            <div class="feature-card fade-in-up delay-200">
-                <div class="feature-card-inner">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Algo-Driven Yield</h3>
-                    <p style="color: var(--text-muted);">
-                        Our productive asset engines like SantrX deliver market-leading returns (200%+) 
-                        through automated arbitrage and optimized yield farming strategies.
-                    </p>
-                </div>
-            </div>
-            <!-- Feature 3 -->
-            <div class="feature-card fade-in-up delay-300">
-                <div class="feature-card-inner">
-                    <div class="feature-icon">🤖</div>
-                    <h3>AI Integration</h3>
-                    <p style="color: var(--text-muted);">
-                        Leveraging machine learning for predictive market analysis. Rentalligence agents 
-                        monitor volatility 24/7 to adjust positions in real-time.
-                    </p>
-                </div>
-            </div>
-             <!-- Feature 4 -->
-             <div class="feature-card fade-in-up delay-100">
-                <div class="feature-card-inner">
-                    <div class="feature-icon">💧</div>
-                    <h3>Instant Liquidity</h3>
-                    <p style="color: var(--text-muted);">
-                        Unlike traditional VC or real estate, your investments are tokenized. 
-                        Enter or exit positions instantly on our secondary markets without lock-up periods.
-                    </p>
-                </div>
-            </div>
-             <!-- Feature 5 -->
-             <div class="feature-card fade-in-up delay-200">
-                <div class="feature-card-inner">
-                    <div class="feature-icon">⚖️</div>
-                    <h3>DAO Governance</h3>
-                    <p style="color: var(--text-muted);">
-                        You are not just a customer; you are a partner. Hold Karma Credits to vote on 
-                        future project incubations and treasury allocations.
-                    </p>
-                </div>
-            </div>
-             <!-- Feature 6 -->
-             <div class="feature-card fade-in-up delay-300">
-                <div class="feature-card-inner">
-                    <div class="feature-icon">🌐</div>
-                    <h3>Cross-Chain</h3>
-                    <p style="color: var(--text-muted);">
-                        We are blockchain agnostic. Our bridges allow you to move value seamlessly 
-                        between Ethereum, Solana, and Layer-2 networks for maximum efficiency.
-                    </p>
-                </div>
-            </div>
+      <h2 class="section-title fade-in-up">
+        THE TEKNOLEED <span>ADVANTAGE</span>
+      </h2>
+      <div class="feature-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card fade-in-up delay-100">
+          <div class="feature-card-inner">
+            <div class="feature-icon">🛡️</div>
+            <h3>Ironclad Security</h3>
+            <p style="color: var(--text-muted)">
+              We prioritize capital preservation utilizing multi-sig wallets,
+              time-locks, and rigorous third-party auditing to ensure your
+              assets are immune to systemic shocks.
+            </p>
+          </div>
         </div>
+        <!-- Feature 2 -->
+        <div class="feature-card fade-in-up delay-200">
+          <div class="feature-card-inner">
+            <div class="feature-icon">🚀</div>
+            <h3>Algo-Driven Yield</h3>
+            <p style="color: var(--text-muted)">
+              Our productive asset engines like SantrX deliver market-leading
+              returns (200%+) through automated arbitrage and optimized yield
+              farming strategies.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card fade-in-up delay-300">
+          <div class="feature-card-inner">
+            <div class="feature-icon">🤖</div>
+            <h3>AI Integration</h3>
+            <p style="color: var(--text-muted)">
+              Leveraging machine learning for predictive market analysis.
+              Rentalligence agents monitor volatility 24/7 to adjust positions
+              in real-time.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card fade-in-up delay-100">
+          <div class="feature-card-inner">
+            <div class="feature-icon">💧</div>
+            <h3>Instant Liquidity</h3>
+            <p style="color: var(--text-muted)">
+              Unlike traditional VC or real estate, your investments are
+              tokenized. Enter or exit positions instantly on our secondary
+              markets without lock-up periods.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 5 -->
+        <div class="feature-card fade-in-up delay-200">
+          <div class="feature-card-inner">
+            <div class="feature-icon">⚖️</div>
+            <h3>DAO Governance</h3>
+            <p style="color: var(--text-muted)">
+              You are not just a customer; you are a partner. Hold Karma Credits
+              to vote on future project incubations and treasury allocations.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 6 -->
+        <div class="feature-card fade-in-up delay-300">
+          <div class="feature-card-inner">
+            <div class="feature-icon">🌐</div>
+            <h3>Cross-Chain</h3>
+            <p style="color: var(--text-muted)">
+              We are blockchain agnostic. Our bridges allow you to move value
+              seamlessly between Ethereum, Solana, and Layer-2 networks for
+              maximum efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-     <!-- Section: Community Terminal -->
-     <section>
-        <h2 class="section-title fade-in-up">LIVE <span>NETWORK</span></h2>
-        <div class="terminal-window fade-in-up">
-            <div class="terminal-header">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-            <div class="terminal-body" id="terminal-body">
-                <p>> Connecting to Teknoleed Mainnet...</p>
-                <p>> Status: Connected.</p>
-                <p>> Fetching latest transactions...</p>
-                <!-- JS will inject logs here -->
-            </div>
-            <p><span style="color:#fff;">user@teknoleed:~$</span> <span class="cursor">_</span></p>
+    <!-- Section: Community Terminal -->
+    <section>
+      <h2 class="section-title fade-in-up">LIVE <span>NETWORK</span></h2>
+      <div class="terminal-window fade-in-up">
+        <div class="terminal-header">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="contact.html" class="btn">Join The Discord</a>
+        <div class="terminal-body" id="terminal-body">
+          <p>> Connecting to Teknoleed Mainnet...</p>
+          <p>> Status: Connected.</p>
+          <p>> Fetching latest transactions...</p>
+          <!-- JS will inject logs here -->
         </div>
+        <p>
+          <span style="color: #fff">user@teknoleed:~$</span>
+          <span class="cursor">_</span>
+        </p>
+      </div>
+      <div style="text-align: center; margin-top: 40px">
+        <a href="contact.html" class="btn">Join The Discord</a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-col" style="flex: 2;">
-                <a href="#" class="logo">TEKNOLEED</a>
-                <p style="margin-top: 20px; max-width: 300px;">
-                    Pioneering the decentralized economy with intelligent investment solutions.
-                </p>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Careers</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-             <div class="footer-col">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="contact.html">Contact Support</a></li>
-                    <li><a href="#">Twitter / X</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-col" style="flex: 2">
+          <a href="#" class="logo">TEKNOLEED</a>
+          <p style="margin-top: 20px; max-width: 300px">
+            Pioneering the decentralized economy with intelligent investment
+            solutions.
+          </p>
         </div>
-        <p style="text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
-            &copy; 2024 Teknoleed. All rights reserved.
-        </p>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="contact.html">Contact Support</a></li>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <p
+        style="
+          text-align: center;
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
+          padding-top: 20px;
+        "
+      >
+        &copy; 2024 Teknoleed. All rights reserved.
+      </p>
     </footer>
 
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
