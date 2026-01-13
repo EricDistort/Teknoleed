@@ -1,179 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Teknoleed</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <canvas id="particles-canvas"></canvas>
 
     <nav class="navbar">
-        <a href="index.html" class="logo">TEKNOLEED</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
-            <a href="contact.html" class="active">Contact</a>
-            <a href="Assets/Bullguard.apk" download>Bullguard</a>
-        </div>
+      <a href="index.html" class="logo">TEKNOLEED</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="Assets/Bullguard.apk" download>Bullguard</a>
+      </div>
     </nav>
 
     <!-- 1. Hero Section (Reusing Genesis Styles for consistency) -->
-    <header class="hero genesis-hero" style="min-height: 50vh; padding-top: 120px;">
-        <h1 class="fade-in-up">PARTNER WITH <span class="gradient-text">THE FUTURE</span></h1>
-        <p class="fade-in-up delay-100">
-            Whether you are an institutional investor, a developer, or a media partner, <br>
-            we are ready to build the next generation of finance with you.
-        </p>
+    <header
+      class="hero genesis-hero"
+      style="min-height: 50vh; padding-top: 120px"
+    >
+      <h1 class="fade-in-up">
+        PARTNER WITH <span class="gradient-text">THE FUTURE</span>
+      </h1>
+      <p class="fade-in-up delay-100">
+        Whether you are an institutional investor, a developer, or a media
+        partner, <br />
+        we are ready to build the next generation of finance with you.
+      </p>
     </header>
 
     <!-- 2. Department Grid -->
     <section>
-        <h2 class="section-title fade-in-up" style="text-align: center;">DIRECT <span class="gradient-text">CHANNELS</span></h2>
-        <div class="department-grid fade-in-up delay-100">
-            <!-- Card 1 -->
-            <div class="dept-card">
-                <div class="dept-icon">💼</div>
-                <h3>Investor Relations</h3>
-                <p style="color:var(--text-muted); font-size:0.9rem;">
-                    For institutional capital allocation, fund performance reports, and LP inquiries.
-                </p>
-                <a href="mailto:invest@teknoleed.com" class="dept-email">invest@teknoleed.com</a>
-            </div>
-            <!-- Card 2 -->
-             <div class="dept-card">
-                <div class="dept-icon">📡</div>
-                <h3>Press & Media</h3>
-                <p style="color:var(--text-muted); font-size:0.9rem;">
-                    For interview requests, brand assets, and official ecosystem statements.
-                </p>
-                <a href="mailto:press@teknoleed.com" class="dept-email">press@teknoleed.com</a>
-            </div>
-            <!-- Card 3 -->
-             <div class="dept-card">
-                <div class="dept-icon">🛠️</div>
-                <h3>General Support</h3>
-                <p style="color:var(--text-muted); font-size:0.9rem;">
-                    For platform technical issues, account assistance, or general queries.
-                </p>
-                <a href="mailto:support@teknoleed.com" class="dept-email">help@teknoleed.com</a>
-            </div>
+      <h2 class="section-title fade-in-up" style="text-align: center">
+        DIRECT <span class="gradient-text">CHANNELS</span>
+      </h2>
+      <div class="department-grid fade-in-up delay-100">
+        <!-- Card 1 -->
+        <div class="dept-card">
+          <div class="dept-icon">💼</div>
+          <h3>Investor Relations</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem">
+            For institutional capital allocation, fund performance reports, and
+            LP inquiries.
+          </p>
+          <a href="mailto:invest@teknoleed.com" class="dept-email"
+            >invest@teknoleed.com</a
+          >
         </div>
+        <!-- Card 2 -->
+        <div class="dept-card">
+          <div class="dept-icon">📡</div>
+          <h3>Press & Media</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem">
+            For interview requests, brand assets, and official ecosystem
+            statements.
+          </p>
+          <a href="mailto:press@teknoleed.com" class="dept-email"
+            >press@teknoleed.com</a
+          >
+        </div>
+        <!-- Card 3 -->
+        <div class="dept-card">
+          <div class="dept-icon">🛠️</div>
+          <h3>General Support</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem">
+            For platform technical issues, account assistance, or general
+            queries.
+          </p>
+          <a href="mailto:support@teknoleed.com" class="dept-email"
+            >help@teknoleed.com</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- 3. Modern Form -->
     <section class="form-section-wrapper fade-in-up">
-        <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">SEND A <span class="gradient-text">MESSAGE</span></h2>
-        <form class="modern-form">
-            <div class="split-layout" style="margin-bottom: 0; gap: 20px;">
-                <div class="form-group" style="flex:1">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" class="modern-input" placeholder="Enter your name">
-                </div>
-                <div class="form-group" style="flex:1">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="modern-input" placeholder="Enter your email">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="interest">Area of Interest</label>
-                <input type="text" id="interest" class="modern-input" placeholder="e.g., Investment, Partnership, Career">
-            </div>
-            <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" rows="5" class="modern-input" placeholder="Tell us how we can collaborate..."></textarea>
-            </div>
-            <button type="submit" class="btn" style="width:100%; border-radius: 50px;">Submit Inquiry</button>
-        </form>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 40px">
+        SEND A <span class="gradient-text">MESSAGE</span>
+      </h2>
+      <form class="modern-form">
+        <div class="split-layout" style="margin-bottom: 0; gap: 20px">
+          <div class="form-group" style="flex: 1">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              class="modern-input"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group" style="flex: 1">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="modern-input"
+              placeholder="Enter your email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="interest">Area of Interest</label>
+          <input
+            type="text"
+            id="interest"
+            class="modern-input"
+            placeholder="e.g., Investment, Partnership, Career"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            class="modern-input"
+            placeholder="Tell us how we can collaborate..."
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn"
+          style="width: 100%; border-radius: 50px"
+        >
+          Submit Inquiry
+        </button>
+      </form>
     </section>
 
     <!-- 4. Global Hubs -->
     <section>
-        <h2 class="section-title fade-in-up" style="text-align: center;">GLOBAL <span class="gradient-text">HUBS</span></h2>
-        <div class="locations-grid fade-in-up delay-100">
-            <div class="hub-item">
-                <div class="hub-circle">🇦🇪</div>
-                <h4>Dubai, UAE</h4>
-                <p style="color:var(--text-muted); font-size:0.85rem;">HQ & Operations</p>
-            </div>
-            <div class="hub-item">
-                <div class="hub-circle">🇸🇬</div>
-                <h4>Singapore</h4>
-                <p style="color:var(--text-muted); font-size:0.85rem;">APAC Growth</p>
-            </div>
-            <div class="hub-item">
-                <div class="hub-circle">🇺🇸</div>
-                <h4>New York, USA</h4>
-                <p style="color:var(--text-muted); font-size:0.85rem;">Capital Markets</p>
-            </div>
-             <div class="hub-item">
-                <div class="hub-circle">🇨🇭</div>
-                <h4>Zug, Switzerland</h4>
-                <p style="color:var(--text-muted); font-size:0.85rem;">Legal & Compliance</p>
-            </div>
+      <h2 class="section-title fade-in-up" style="text-align: center">
+        GLOBAL <span class="gradient-text">HUBS</span>
+      </h2>
+      <div class="locations-grid fade-in-up delay-100">
+        <div class="hub-item">
+          <div class="hub-circle">🇦🇪</div>
+          <h4>Dubai, UAE</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem">
+            HQ & Operations
+          </p>
         </div>
+        <div class="hub-item">
+          <div class="hub-circle">🇸🇬</div>
+          <h4>Singapore</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem">
+            APAC Growth
+          </p>
+        </div>
+        <div class="hub-item">
+          <div class="hub-circle">🇺🇸</div>
+          <h4>New York, USA</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem">
+            Capital Markets
+          </p>
+        </div>
+        <div class="hub-item">
+          <div class="hub-circle">🇨🇭</div>
+          <h4>Zug, Switzerland</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem">
+            Legal & Compliance
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- 5. FAQ -->
-    <section style="margin-bottom: 50px;">
-         <h2 class="section-title fade-in-up" style="text-align: center; margin-bottom: 40px;">FREQUENTLY <span class="gradient-text">ASKED</span></h2>
-         <div class="faq-container fade-in-up delay-100">
-             <details class="faq-item">
-                 <summary class="faq-question">How do I become an LP in SantrX?</summary>
-                 <div class="faq-answer">
-                     Access to SantrX yield vaults is currently permissioned. Please contact our Investor Relations team or apply for the waitlist via the dashboard once live.
-                 </div>
-             </details>
-             <details class="faq-item">
-                 <summary class="faq-question">Is Teknoleed audited?</summary>
-                 <div class="faq-answer">
-                     Yes. All our smart contracts undergo triple-auditing by top-tier firms (CertiK, Trail of Bits) before mainnet deployment.
-                 </div>
-             </details>
-             <details class="faq-item">
-                 <summary class="faq-question">Are you hiring globally?</summary>
-                 <div class="faq-answer">
-                     We are a remote-first organization with hubs in major financial centers. Check our LinkedIn page for current openings in Engineering and Growth.
-                 </div>
-             </details>
-         </div>
+    <section style="margin-bottom: 50px">
+      <h2
+        class="section-title fade-in-up"
+        style="text-align: center; margin-bottom: 40px"
+      >
+        FREQUENTLY <span class="gradient-text">ASKED</span>
+      </h2>
+      <div class="faq-container fade-in-up delay-100">
+        <details class="faq-item">
+          <summary class="faq-question">
+            How do I become an LP in SantrX?
+          </summary>
+          <div class="faq-answer">
+            Access to SantrX yield vaults is currently permissioned. Please
+            contact our Investor Relations team or apply for the waitlist via
+            the dashboard once live.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Is Teknoleed audited?</summary>
+          <div class="faq-answer">
+            Yes. All our smart contracts undergo triple-auditing by top-tier
+            firms (CertiK, Trail of Bits) before mainnet deployment.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Are you hiring globally?</summary>
+          <div class="faq-answer">
+            We are a remote-first organization with hubs in major financial
+            centers. Check our LinkedIn page for current openings in Engineering
+            and Growth.
+          </div>
+        </details>
+      </div>
     </section>
 
     <footer>
-        <div class="footer-content" style="text-align: left;">
-            <div class="footer-col" style="flex: 2;">
-                <a href="#" class="logo">TEKNOLEED</a>
-                <p style="margin-top: 20px; max-width: 300px;">
-                    Building the future of decentralized finance.
-                </p>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Careers</a></li>
-                </ul>
-            </div>
-             <div class="footer-col">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="#">Twitter / X</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
+      <div class="footer-content" style="text-align: left">
+        <div class="footer-col" style="flex: 2">
+          <a href="#" class="logo">TEKNOLEED</a>
+          <p style="margin-top: 20px; max-width: 300px">
+            Building the future of decentralized finance.
+          </p>
         </div>
-        <p style="text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
-            &copy; 2024 Teknoleed. All rights reserved.
-        </p>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <p
+        style="
+          text-align: center;
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
+          padding-top: 20px;
+        "
+      >
+        &copy; 2024 Teknoleed. All rights reserved.
+      </p>
     </footer>
 
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
