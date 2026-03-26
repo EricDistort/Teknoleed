@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teknoleed | Future of Finance</title>
+    <title>SantrX | Institutional Asset & Resource Management</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,76 +12,226 @@
       rel="stylesheet"
     />
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Embedded styles for new sections to ensure immediate visual structure */
+      .ticker-wrap {
+        width: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 15px 0;
+        box-sizing: border-box;
+      }
+      .ticker {
+        display: inline-block;
+        white-space: nowrap;
+        animation: ticker 40s linear infinite;
+      }
+      .ticker-item {
+        display: inline-block;
+        padding: 0 40px;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.1rem;
+        color: var(--text-muted, #a0aec0);
+        letter-spacing: 1px;
+      }
+      .ticker-up { color: #00ff88; }
+      .ticker-down { color: #ff4d4d; }
+      @keyframes ticker {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-50%, 0, 0); }
+      }
+      .sector-card {
+        background: rgba(20, 25, 35, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .sector-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+        border-color: rgba(0, 255, 136, 0.3);
+      }
+      .sector-title {
+        color: #fff;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+      
+      /* New Grids */
+      .global-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .global-node {
+        padding: 20px;
+        border-left: 2px solid #00ff88;
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .global-node h4 { margin-bottom: 5px; font-family: 'Rajdhani', sans-serif; font-size: 1.2rem; }
+      .global-node p { color: #a0aec0; font-size: 0.9rem; }
+
+      .process-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .process-step {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        background: rgba(20, 25, 35, 0.4);
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .step-number {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2rem;
+        color: #00ff88;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .step-content h3 { margin-bottom: 10px; font-size: 1.3rem; }
+      .step-content p { color: #a0aec0; font-size: 0.95rem; line-height: 1.6; }
+
+      .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .news-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255,255,255,0.05);
+        padding: 25px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+      .news-card:hover { background: rgba(255, 255, 255, 0.05); }
+      .news-date { color: #00ff88; font-size: 0.85rem; font-family: 'Rajdhani', sans-serif; font-weight: 600; letter-spacing: 1px; display: block; margin-bottom: 10px; }
+      .news-card h3 { font-size: 1.2rem; margin-bottom: 15px; line-height: 1.4; }
+      .news-card p { color: #a0aec0; font-size: 0.9rem; margin-bottom: 20px; }
+      .read-more { color: #fff; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #00ff88; padding-bottom: 2px; transition: color 0.3s; }
+      .read-more:hover { color: #00ff88; }
+    </style>
   </head>
   <body>
-    <!-- Background Particles -->
     <canvas id="particles-canvas"></canvas>
 
-    <!-- Navigation -->
+      <!-- Navigation -->
     <nav class="navbar">
-      <a href="index.html" class="logo">TEKNOLEED</a>
+      <a href="index.html" class="logo">SANTRX</a>
       <div class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="Assets/Bullguard.apk" download>Bullguard</a>
+        
       </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
       <h1 class="fade-in-up">
-        INVEST IN<br />
-        <span class="gradient-text">THE FUTURE</span>
+        ENGINEERING<br />
+        <span class="gradient-text">ABSOLUTE YIELD</span>
       </h1>
       <p
         class="fade-in-up delay-100"
         style="font-size: 1.15rem; line-height: 1.8; max-width: 800px"
       >
-        Teknoleed bridges the colossal gap between traditional finance (TradFi)
-        and next-generation decentralized innovation. In an era of stagnant
-        yields and rising inflation, we provide a gateway to algorithmic growth.
-        Grow your wealth through our curated ecosystem of high-yield productive
-        assets, powered by institutional-grade audits and transparent on-chain
-        mechanics.
+        SantrX is a premier institutional hedge fund architecting the future of diversified capital. 
+        We forge unshakeable portfolios by fusing complex collateralized instruments and emerging severance bond 
+        trends with tangible powerhouse assets—spanning gold mining, T.T bar revenue, rare earth minerals, 
+        and high-frequency crypto & forex markets.
       </p>
       <div class="fade-in-up delay-200" style="margin-top: 30px">
-        <a href="projects.html" class="btn">Explore Ecosystem</a>
+        <a href="funds.html" class="btn">View Fund Prospectus</a>
         <a href="about.html" class="btn btn-secondary" style="margin-left: 15px"
-          >Read Manifesto</a
+          >Corporate Overview</a
         >
       </div>
     </header>
 
-    <!-- Stats Section -->
+    <div class="ticker-wrap fade-in-up">
+      <div class="ticker">
+        <div class="ticker-item">XAU/USD (Gold) $2,345.80 <span class="ticker-up">▲ +1.2%</span></div>
+        <div class="ticker-item">T.T BAR (99.99%) Premium: +$45.00/oz</div>
+        <div class="ticker-item">SEV-BOND (10Y) Yield: 5.42% <span class="ticker-down">▼ -0.05%</span></div>
+        <div class="ticker-item">BTC/USD $64,230.00 <span class="ticker-up">▲ +2.4%</span></div>
+        <div class="ticker-item">EUR/USD 1.0845 <span class="ticker-down">▼ -0.1%</span></div>
+        <div class="ticker-item">RARE EARTH IDX (REI) 4,120.5 <span class="ticker-up">▲ +3.1%</span></div>
+        <div class="ticker-item">SANTRX ALPHA FUND NAV: $142.18 <span class="ticker-up">▲ +0.8%</span></div>
+        <div class="ticker-item">XAU/USD (Gold) $2,345.80 <span class="ticker-up">▲ +1.2%</span></div>
+        <div class="ticker-item">T.T BAR (99.99%) Premium: +$45.00/oz</div>
+        <div class="ticker-item">SEV-BOND (10Y) Yield: 5.42% <span class="ticker-down">▼ -0.05%</span></div>
+        <div class="ticker-item">BTC/USD $64,230.00 <span class="ticker-up">▲ +2.4%</span></div>
+        <div class="ticker-item">EUR/USD 1.0845 <span class="ticker-down">▼ -0.1%</span></div>
+        <div class="ticker-item">RARE EARTH IDX (REI) 4,120.5 <span class="ticker-up">▲ +3.1%</span></div>
+        <div class="ticker-item">SANTRX ALPHA FUND NAV: $142.18 <span class="ticker-up">▲ +0.8%</span></div>
+      </div>
+    </div>
+
     <section>
       <div class="stats-container fade-in-up">
         <div class="stat-item">
-          <h2 class="counter" data-target="5">0</h2>
-          <p>Innovative Projects</p>
+          <h2 class="counter" data-target="3">0</h2>
+          <p>Global Hedge Funds</p>
         </div>
         <div class="stat-item">
-          <h2 class="counter" data-target="15000">0</h2>
-          <p>Active Investors</p>
+          <h2 class="counter" data-target="14">0</h2>
+          <p>Active Mining Operations</p>
         </div>
         <div class="stat-item">
-          <h2 class="counter" data-target="45">0</h2>
-          <p>Million AUM ($)</p>
+          <h2>$ <span class="counter" data-target="4">0</span>.2B</h2>
+          <p>Assets Under Management</p>
         </div>
         <div class="stat-item">
-          <h2>24/7</h2>
-          <p>Support System</p>
+          <h2>24/5</h2>
+          <p>Forex & Crypto Trading</p>
         </div>
       </div>
     </section>
 
-    <!-- Section: The Paradigm Shift -->
+    <section style="background: rgba(0,0,0,0.2); border-top: 1px solid rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.02);">
+      <h2 class="section-title fade-in-up" style="text-align: center;">GLOBAL <span class="gradient-text">INFRASTRUCTURE</span></h2>
+      <p class="fade-in-up" style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+        Our physical and digital footprint spans key financial hubs and resource-rich territories, ensuring zero-latency execution and secure custody.
+      </p>
+      <div class="global-grid fade-in-up delay-100">
+        <div class="global-node">
+          <h4>Dubai, UAE</h4>
+          <p>Global Headquarters & Commodities Trading Desk</p>
+        </div>
+        <div class="global-node">
+          <h4>Geneva, CHE</h4>
+          <p>Wealth Management & Collateral Vaults</p>
+        </div>
+        <div class="global-node">
+          <h4>Singapore, SGP</h4>
+          <p>Forex / Crypto Algorithmic Servers</p>
+        </div>
+        <div class="global-node">
+          <h4>Perth, AUS</h4>
+          <p>Mining & Rare Earth Extraction Operations</p>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2 class="section-title fade-in-up">
-        THE <span class="gradient-text">PARADIGM SHIFT</span>
+        CORE <span class="gradient-text">DIVISIONS</span>
       </h2>
       <p
         class="fade-in-up"
@@ -94,118 +243,157 @@
           font-size: 1.1rem;
         "
       >
-        The old financial system is built on gatekeepers, inefficiency, and
-        exclusion. Teknoleed removes the middleman, allowing you to access the
-        raw productive power of your capital through decentralized protocols
-        that were once reserved for the ultra-wealthy.
+        SantrX leverages a multi-disciplinary approach, balancing high-liquidity digital markets 
+        with the intrinsic value of physical resources.
       </p>
-      <div class="comparison-container fade-in-up">
-        <!-- Old World -->
-        <div class="comparison-card tradfi">
-          <h3>Traditional Finance</h3>
-          <div class="comp-row">
-            <span>Average Savings APY</span>
-            <span style="color: #ff4d4d">0.5%</span>
-          </div>
-          <div class="comp-row">
-            <span>Asset Control</span>
-            <span style="color: #ff4d4d">Centralized Custody</span>
-          </div>
-          <div class="comp-row">
-            <span>Transparency</span>
-            <span style="color: #ff4d4d">Opaque / Black Box</span>
-          </div>
-          <div class="comp-row">
-            <span>Accessibility</span>
-            <span style="color: #ff4d4d">Institutions Only</span>
-          </div>
+      
+      <div class="feature-grid fade-in-up" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        
+        <div class="sector-card">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 20px;">🏦</div>
+          <h3 class="sector-title">Hedge Funds & Collateral</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Bespoke hedge fund strategies utilizing heavily collateralized debt instruments to minimize downside risk while capturing asymmetrical upside.
+          </p>
         </div>
-        <!-- New World -->
-        <div class="comparison-card defi">
-          <h3>Teknoleed Ecosystem</h3>
-          <div class="comp-row">
-            <span>SantrX Yield</span>
-            <span style="color: #00ff88">200% - 400%</span>
-          </div>
-          <div class="comp-row">
-            <span>Asset Control</span>
-            <span style="color: #00ff88">User Owned (Non-Custodial)</span>
-          </div>
-          <div class="comp-row">
-            <span>Transparency</span>
-            <span style="color: #00ff88">Verifiable On-Chain</span>
-          </div>
-          <div class="comp-row">
-            <span>Accessibility</span>
-            <span style="color: #00ff88">Permissionless</span>
-          </div>
+
+        <div class="sector-card">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 20px;">📜</div>
+          <h3 class="sector-title">Severance Bonds</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Capitalizing on macro severance bond trends. We provide deep liquidity and arbitrage opportunities in corporate restructuring debt.
+          </p>
         </div>
+
+        <div class="sector-card">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 20px;">⛏️</div>
+          <h3 class="sector-title">Gold & T.T Bar Revenue</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Direct ownership and funding of global gold mining operations, securing wholesale T.T (Telegraphic Transfer) bar revenue streams directly from refineries.
+          </p>
+        </div>
+
+        <div class="sector-card">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 20px;">💎</div>
+          <h3 class="sector-title">Rare Earth Minerals</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Strategic reserves and extraction of critical rare earth elements essential for next-generation technology, defense, and green energy infrastructure.
+          </p>
+        </div>
+
+        <div class="sector-card">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 20px;">💱</div>
+          <h3 class="sector-title">Crypto & Forex Markets</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Algorithmic execution across digital asset ecosystems and traditional fiat pairs, ensuring constant capital mobility and market-neutral yield generation.
+          </p>
+        </div>
+
       </div>
     </section>
 
-    <!-- Section: How It Works -->
-    <section style="overflow: hidden">
-      <h2 class="section-title fade-in-up">HOW IT <span>WORKS</span></h2>
-      <div class="process-steps fade-in-up">
-        <div class="step-card">
-          <div class="step-icon">01</div>
-          <h3>Connect Portfolio</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem">
-            Seamlessly integrate your digital assets via our secure Web3
-            interface. We support Metamask, WalletConnect, and all major
-            hardware wallets for maximum security.
-          </p>
-        </div>
-        <div class="step-card">
-          <div class="step-icon">02</div>
-          <h3>Select Strategy</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem">
-            Choose from our curated engines: SantrX (High Yield Aggregation),
-            Bullguard (RWA Tokenization), or Techmont (NFT Liquidity Staking).
-          </p>
-        </div>
-        <div class="step-card">
-          <div class="step-icon">03</div>
-          <h3>Watch It Grow</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem">
-            Your assets are put to work immediately. Track real-time performance
-            on your dashboard, view reward accrual, and withdraw your liquidity
-            instantly anytime.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: ROI Calculator -->
     <section>
-      <h2 class="section-title fade-in-up">PROJECT <span>YOUR GROWTH</span></h2>
+      <h2 class="section-title fade-in-up">INVESTMENT <span>METHODOLOGY</span></h2>
+      <div class="process-timeline fade-in-up">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Hard Asset Anchoring</h3>
+            <p>Every SantrX fund begins with a foundational layer of physical commodities. By securing direct lines to gold T.T bars and rare earth mineral mining outputs, we establish an inflation-resistant base immune to fiat debasement.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Debt & Yield Structuring</h3>
+            <p>Upon our physical foundation, we layer complex severance bonds and collateralized instruments. This secondary tier locks in predictable, fixed-income yields derived from macro-economic restructuring and corporate lifecycle events.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Algorithmic Overlay</h3>
+            <p>The apex of our strategy involves deploying high-frequency trading algorithms across Forex and Crypto markets. We utilize the liquid capital generated from tiers 1 and 2 to execute non-directional arbitrage, driving alpha generation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: rgba(0,0,0,0.2); border-top: 1px solid rgba(255,255,255,0.02);">
+      <h2 class="section-title fade-in-up">
+        THE <span class="gradient-text">SANTRX STRATEGY</span>
+      </h2>
+      <div class="comparison-container fade-in-up">
+        <div class="comparison-card tradfi">
+          <h3>Standard Portfolio</h3>
+          <div class="comp-row">
+            <span>Asset Classes</span>
+            <span style="color: #ff4d4d">Equities & Standard Bonds</span>
+          </div>
+          <div class="comp-row">
+            <span>Inflation Hedge</span>
+            <span style="color: #ff4d4d">Low (Fiat Correlated)</span>
+          </div>
+          <div class="comp-row">
+            <span>Market Exposure</span>
+            <span style="color: #ff4d4d">Highly Correlated</span>
+          </div>
+          <div class="comp-row">
+            <span>Physical Backing</span>
+            <span style="color: #ff4d4d">None</span>
+          </div>
+        </div>
+        <div class="comparison-card defi">
+          <h3>SantrX Omni-Fund</h3>
+          <div class="comp-row">
+            <span>Asset Classes</span>
+            <span style="color: #00ff88">Crypto, Forex, Severance Bonds</span>
+          </div>
+          <div class="comp-row">
+            <span>Inflation Hedge</span>
+            <span style="color: #00ff88">High (Gold, Rare Earths)</span>
+          </div>
+          <div class="comp-row">
+            <span>Market Exposure</span>
+            <span style="color: #00ff88">Diversified / Arbitrage</span>
+          </div>
+          <div class="comp-row">
+            <span>Physical Backing</span>
+            <span style="color: #00ff88">T.T Bars & Mineral Rights</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title fade-in-up">PROJECT <span>YOUR ALLOCATION</span></h2>
       <div class="calculator-container fade-in-up">
         <div class="slider-group">
           <div class="slider-label">
-            <span>Initial Investment</span>
-            <span id="investment-val">$10,000</span>
+            <span>Capital Deployment</span>
+            <span id="investment-val">$10,000,000</span>
           </div>
           <input
             type="range"
             id="investment-input"
-            min="1000"
-            max="100000"
-            step="500"
-            value="10000"
+            min="1000000"
+            max="100000000"
+            step="1000000"
+            value="10000000"
           />
         </div>
         <div class="slider-group">
           <div class="slider-label">
-            <span>Duration (Months)</span>
-            <span id="duration-val">12 Months</span>
+            <span>Holding Period (Years)</span>
+            <span id="duration-val">5 Years</span>
           </div>
           <input
             type="range"
             id="duration-input"
             min="1"
-            max="24"
+            max="10"
             step="1"
-            value="12"
+            value="5"
           />
         </div>
 
@@ -217,9 +405,9 @@
               color: var(--text-muted);
             "
           >
-            Estimated Returns (SantrX)
+            Estimated Yield (SantrX Multi-Asset Fund)
           </p>
-          <div class="result-val" id="result-display">$30,000</div>
+          <div class="result-val" id="result-display">$18,500,000</div>
           <p
             style="
               font-size: 0.8rem;
@@ -228,95 +416,38 @@
               margin-top: 10px;
             "
           >
-            *Estimates based on historical 3.0x yields. Not financial advice.
+            *Estimates based on aggregated historical yields across Crypto, Bond, and Commodities sectors. Past performance is not indicative of future results.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Section: Why Us (Refined & Expanded) -->
     <section>
-      <h2 class="section-title fade-in-up">
-        THE TEKNOLEED <span>ADVANTAGE</span>
-      </h2>
-      <div class="feature-grid">
-        <!-- Feature 1 -->
-        <div class="feature-card fade-in-up delay-100">
-          <div class="feature-card-inner">
-            <div class="feature-icon">🛡️</div>
-            <h3>Ironclad Security</h3>
-            <p style="color: var(--text-muted)">
-              We prioritize capital preservation utilizing multi-sig wallets,
-              time-locks, and rigorous third-party auditing to ensure your
-              assets are immune to systemic shocks.
-            </p>
-          </div>
+      <h2 class="section-title fade-in-up">MARKET <span>INSIGHTS</span></h2>
+      <div class="news-grid fade-in-up">
+        <div class="news-card">
+          <span class="news-date">Q1 2026 REPORT</span>
+          <h3>Severance Bonds: The New Safe Haven?</h3>
+          <p>An in-depth analysis of how corporate restructuring debt is outperforming traditional sovereign bonds amidst global rate fluctuations.</p>
+          <a href="#" class="read-more">Download PDF</a>
         </div>
-        <!-- Feature 2 -->
-        <div class="feature-card fade-in-up delay-200">
-          <div class="feature-card-inner">
-            <div class="feature-icon">🚀</div>
-            <h3>Algo-Driven Yield</h3>
-            <p style="color: var(--text-muted)">
-              Our productive asset engines like SantrX deliver market-leading
-              returns (200%+) through automated arbitrage and optimized yield
-              farming strategies.
-            </p>
-          </div>
+        <div class="news-card">
+          <span class="news-date">COMMODITY WATCH</span>
+          <h3>T.T Bar Acquisition Scaling</h3>
+          <p>SantrX expands direct refinery partnerships, securing an additional 400kg of 99.99% wholesale gold delivery for the Alpha Fund.</p>
+          <a href="#" class="read-more">Read Brief</a>
         </div>
-        <!-- Feature 3 -->
-        <div class="feature-card fade-in-up delay-300">
-          <div class="feature-card-inner">
-            <div class="feature-icon">🤖</div>
-            <h3>AI Integration</h3>
-            <p style="color: var(--text-muted)">
-              Leveraging machine learning for predictive market analysis.
-              Rentalligence agents monitor volatility 24/7 to adjust positions
-              in real-time.
-            </p>
-          </div>
-        </div>
-        <!-- Feature 4 -->
-        <div class="feature-card fade-in-up delay-100">
-          <div class="feature-card-inner">
-            <div class="feature-icon">💧</div>
-            <h3>Instant Liquidity</h3>
-            <p style="color: var(--text-muted)">
-              Unlike traditional VC or real estate, your investments are
-              tokenized. Enter or exit positions instantly on our secondary
-              markets without lock-up periods.
-            </p>
-          </div>
-        </div>
-        <!-- Feature 5 -->
-        <div class="feature-card fade-in-up delay-200">
-          <div class="feature-card-inner">
-            <div class="feature-icon">⚖️</div>
-            <h3>DAO Governance</h3>
-            <p style="color: var(--text-muted)">
-              You are not just a customer; you are a partner. Hold Karma Credits
-              to vote on future project incubations and treasury allocations.
-            </p>
-          </div>
-        </div>
-        <!-- Feature 6 -->
-        <div class="feature-card fade-in-up delay-300">
-          <div class="feature-card-inner">
-            <div class="feature-icon">🌐</div>
-            <h3>Cross-Chain</h3>
-            <p style="color: var(--text-muted)">
-              We are blockchain agnostic. Our bridges allow you to move value
-              seamlessly between Ethereum, Solana, and Layer-2 networks for
-              maximum efficiency.
-            </p>
-          </div>
+        <div class="news-card">
+          <span class="news-date">DIGITAL ASSETS</span>
+          <h3>Forex/Crypto Arbitrage Differentials</h3>
+          <p>How SantrX's proprietary trading desk capitalizes on micro-second latency gaps between major fiat pairs and stablecoins.</p>
+          <a href="#" class="read-more">View Analysis</a>
         </div>
       </div>
     </section>
 
-    <!-- Section: Community Terminal -->
     <section>
-      <h2 class="section-title fade-in-up">LIVE <span>NETWORK</span></h2>
+      <h2 class="section-title fade-in-up">QUANTITATIVE <span>DATA FEED</span></h2>
       <div class="terminal-window fade-in-up">
         <div class="terminal-header">
           <div class="dot"></div>
@@ -324,51 +455,54 @@
           <div class="dot"></div>
         </div>
         <div class="terminal-body" id="terminal-body">
-          <p>> Connecting to Teknoleed Mainnet...</p>
-          <p>> Status: Connected.</p>
-          <p>> Fetching latest transactions...</p>
-          <!-- JS will inject logs here -->
-        </div>
+          <p>> Initializing SantrX Quant Server...</p>
+          <p>> Connecting to global mining telemetry... [OK]</p>
+          <p>> Processing collateralized instrument ledger...</p>
+          <p style="color: #00ff88;">> [HEDGE-SYS] Buy signal detected on Severance Bond Tri-Tranche A.</p>
+          <p style="color: #ffcc00;">> [COMMODITY] Gold T.T Bar batch #4992 cleared refinery. Purity: 99.998%.</p>
+          <p>> Executing Forex/Crypto arbitrage sweep...</p>
+          <p style="color: #00ff88;">> [EXECUTION] Arbitrage loop closed. Net spread: +0.014%.</p>
+          </div>
         <p>
-          <span style="color: #fff">user@teknoleed:~$</span>
+          <span style="color: #fff">trader@santrx:~$</span>
           <span class="cursor">_</span>
         </p>
       </div>
       <div style="text-align: center; margin-top: 40px">
-        <a href="contact.html" class="btn">Join The Discord</a>
+        <a href="contact.html" class="btn">Request Institutional Access</a>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-col" style="flex: 2">
-          <a href="#" class="logo">TEKNOLEED</a>
+          <a href="#" class="logo">SANTRX</a>
           <p style="margin-top: 20px; max-width: 300px">
-            Pioneering the decentralized economy with intelligent investment
-            solutions.
+            The nexus of traditional collateralized wealth, physical commodities, and decentralized digital finance.
           </p>
         </div>
         <div class="footer-col">
-          <h4>Company</h4>
+          <h4>Divisions</h4>
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Careers</a></li>
+            <li><a href="#">Hedge Funds</a></li>
+            <li><a href="#">Severance Bonds</a></li>
+            <li><a href="#">Precious Metals</a></li>
+            <li><a href="#">Digital Assets</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Legal</h4>
+          <h4>Corporate</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li><a href="#">Compliance & Audits</a></li>
+            <li><a href="#">Investor Relations</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Connect</h4>
           <ul>
-            <li><a href="contact.html">Contact Support</a></li>
-            <li><a href="#">Twitter / X</a></li>
+            <li><a href="contact.html">Client Support</a></li>
+            <li><a href="#">Bloomberg Terminal ID</a></li>
             <li><a href="#">LinkedIn</a></li>
           </ul>
         </div>
@@ -380,7 +514,7 @@
           padding-top: 20px;
         "
       >
-        &copy; 2024 Teknoleed. All rights reserved.
+        &copy; 2026 SantrX Asset Management. All rights reserved.
       </p>
     </footer>
 
